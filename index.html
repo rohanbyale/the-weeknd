@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Weeknd</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-logo">THE WEEKND</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#rohan">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#songs">Songs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-controls="navLinks" aria-expanded="false" title="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <main>
+    <section id="rohan">
+      <div class="hero-wrap">
+
+        <!-- moving spotlight on text -->
+        <div class="torch-target" id="torchTarget">
+          <h1>THE WEEKND</h1>
+          <div class="light" id="lightOverlay"></div>
+        </div>
+
+        <!-- hero image with stronger torch overlay -->
+        <div id="the2">
+          <!-- replace src with your local file if available -->
+          <img src="the-weeknd.jpg" alt="The Weeknd portrait"
+            onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/The_Weeknd_2018.png/640px-The_Weeknd_2018.png'">
+          <div id="torch"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div id="about-img">
+        <img src="img2.jpg" alt="Abel Tesfaye"
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=900&q=80'">
+      </div>
+
+      <div id="about-info">
+        <h2>About The Weeknd</h2>
+        <p><em>Abel Makkonen Tesfaye</em>, known professionally as <strong>The Weeknd</strong>, is a Canadian singer,
+          songwriter and producer, known for his distinctive vocals and alternative R&B/pop sound.</p>
+
+        <div id="info2">
+          <h3>🎂 Born: 16 February 1990 — Scarborough, Toronto</h3>
+          <h3>🏢 Organization founded: XO</h3>
+        </div>
+
+        <div id="extra-info">
+          <h3 style="color:var(--accent);margin:0 0 8px 0;">✨ Achievements</h3>
+          <ul>
+            <li>4× Grammy Awards</li>
+            <li>Multiple Billboard honors</li>
+            <li>Academy Award nomination</li>
+            <li>Global chart-topping releases</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE VIDEO -->
+    <section class="showcase" aria-hidden="false">
+      <video autoplay loop muted playsinline preload="auto" src="ssvid.net--Blinding-Lights-Whatsapp-Status_1080p.mp4" poster=""
+        onerror="this.style.display='none'"></video>
+      <div class="title">TOP SONGS</div>
+    </section>
+
+    <!-- SWIPER SLIDER -->
+    <!-- <section id="songs" class="swiper mySwiper" aria-label="Top songs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Blinding Lights </div>
+        <div class="swiper-slide">Save Your Tears</div>
+        <div class="swiper-slide">Starboy</div>
+        <div class="swiper-slide">The Hills</div>
+        <div class="swiper-slide">Can't Feel My Face</div>
+        <div class="swiper-slide">Earned It</div>
+      </div>
+
+      <div class="swiper-button-next" aria-hidden="true"></div>
+      <div class="swiper-button-prev" aria-hidden="true"></div>
+    </section> -->
+<section id="songs" class="swiper mySwiper" aria-label="Top songs">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url('images/the-weeknd-blinding-lights-6675.jpg');">
+      <div class="slide-content">
+        <h4>Blinding Lights</h4>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('images/save.jpg');">
+      <div class="slide-content">
+        <h4>Save Your Tears</h4>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('the-weeknd.jpg');">
+      <div class="slide-content">
+        <h4>Starboy</h4>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('images/the-weekend-the-hills-video-billboard-650.webp');">
+      <div class="slide-content">
+        <h4>The Hills</h4>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('images/cant\ feel\ my\ face.webp');">
+      <div class="slide-content">
+        <h4>Can't Feel My Face</h4>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('images/eat.jpg');">
+      <div class="slide-content">
+        <h4>Earned It</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-button-next" aria-hidden="true"></div>
+  <div class="swiper-button-prev" aria-hidden="true"></div>
+</section>
+
+    <!-- SCROLLING MARQUEE -->
+    <div class="scroll-container">
+      <div class="scroll-text">🌟 The Weeknd • XO • Blinding Lights • Save Your Tears • Starboy • The Hills • Can't Feel | The Weeknd • XO • Blinding Lights • Save Your Tears • Starboy • The Hills • Can't Feel | The Weeknd • XO • Blinding Lights • Save Your Tears • Starboy • The Hills • Can't Feel |
+        My Face • 🌟</div>
+    </div>
+
+    <section id="timeline" class="timeline">
+      <h2>Discography Timeline</h2>
+      <div class="timeline-item">
+        <div class="year">2015</div>
+        <div class="content">Album: Beauty Behind the Madness</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2016</div>
+        <div class="content">Album: Starboy</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2020</div>
+        <div class="content">Album: After Hours</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2022</div>
+        <div class="content">Album: Dawn FM</div>
+      </div>
+    </section>
+
+    <!-- CONTACT placeholder -->
+ 
+    <section id="stats" class="stats">
+      <div class="stat">
+        <h3 id="grammys">0</h3>
+        <p>Grammys</p>
+      </div>
+      <div class="stat">
+        <h3 id="billboard">0</h3>
+        <p>Billboard Hits</p>
+      </div>
+      <div class="stat">
+        <h3 id="streams">0</h3>
+        <p>Billion Streams</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+  <h3>Follow The Weeknd</h3>
+  <div class="socials">
+    <a href="#">Twitter</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">YouTube</a>
+  </div>
+  <p>DEVELOPED BY <EM>ROHAN</EM></p>
+</footer>
+
+  <!-- Cursor follower -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
